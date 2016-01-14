@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/layout_height_item_content"
+    android:orientation="horizontal"
+    android:background="@color/colorPrimary"
+    android:layout_marginLeft="@dimen/margin_item_list_content"
+    android:layout_marginRight="@dimen/margin_item_list_content"
+    android:layout_marginBottom="@dimen/margin_item_list_content">
+
+    <ImageView
+        android:layout_width="@dimen/img_content_horizontal"
+        android:layout_height="@dimen/img_content_vertical"
+        android:src="@drawable/placeholder"
+        android:id="@+id/mImageView"
+        android:layout_gravity="center_vertical" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textViewdayOfTheWeek"
+            android:text="Today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textSize="@dimen/textSize_TitleAndGrau"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="@dimen/text_margin"/>
+
+        <TextView
+            android:id="@+id/id"
+            android:text="-10 C"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textSize="@dimen/textSize_TitleAndGrau"
+            android:layout_marginLeft="@dimen/text_margin" />
+
+        <TextView
+            android:id="@+id/content"
+            android:textColor="@android:color/white"
+            android:text="Clear (sky is clear)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textSize="@dimen/textSize_description"
+            android:layout_marginLeft="@dimen/text_margin" />
+
+        </LinearLayout>
+
+</LinearLayout>
